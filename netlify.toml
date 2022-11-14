@@ -2,10 +2,11 @@
 [build]
   command = "npm run build"
   publish = ".next"
-  
+
 [template]
   incoming-hooks = ["Sanity"]
 
 [template.environment]
-  SANITY_TOKEN = "this is your Sanity token"
-  SITE_LOGO = "https://www.netlify.com/logo-placeholder.svg"
+  NEXT_PUBLIC_SANITY_PROJECT_ID="Your Sanity Project Id"
+  NEXT_PUBLIC_SANITY_DATASET="Your Sanity Dataset"
+  SANITY_API_READ_TOKEN="Your Sanity Read Token"
